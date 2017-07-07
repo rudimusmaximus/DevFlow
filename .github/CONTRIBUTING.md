@@ -1,0 +1,1 @@
+This will contain evolving Dev Flow guidelines for sound code using Google Appscript including use of templates, labels, use of zenHub, semantic versioning, goListing, externals, BI exports, multiple domain approach, use of 'Git Flow' in GitKraken, etc.
