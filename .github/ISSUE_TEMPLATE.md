@@ -14,7 +14,7 @@
 - [ ] Developer Tested - Test Copies (DA!s and Release Candidate) 
 
 POST LIVE:
-- [ ] Beta Tested - Live in @RCC  
+- [ ] Beta Tested - Live  
 
 **_full pipeline documentation_** 
 --- 
