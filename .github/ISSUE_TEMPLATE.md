@@ -14,7 +14,7 @@
 - [ ] Developer Tested - Test Copies (Disposable Alpha "DA!s" and Release Candidate) 
 
 POST LIVE:
-- [ ] Beta Tested - Live  
+- [ ] Beta Tested - Live to controlled audience  
 - [ ] Customer Experience - Live analytics reveal working for customers  
 
 **_full pipeline documentation_** 
@@ -24,6 +24,6 @@ POST LIVE:
 # What's New Entry  
 # Solution Implementation Notes  
 ## Developer Testing- Disposable Alpha and Release Candidate  
-## Live Testing - Beta  
+## Live Testing - Beta live to controlled audience  
 ## Customer Experience - Re-open and append if issues for customers
 
