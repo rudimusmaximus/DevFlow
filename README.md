@@ -7,7 +7,8 @@ Star and watch for ongoing updates like future tips and tricks
 ## The entire presentation  
 [Dev Flow by a Process Guy.pdf](https://github.com/rudimusmaximus/DevFlow/files/1130955/Dev.Flow.by.a.Process.Guy.pdf)
 
-## As prensented in Totally Unscripted Episode 10 "TU10: Professionalizing Google Apps Script Development"
+## As prensented in Totally Unscripted Episode 10 
+### From "TU10: Professionalizing Google Apps Script Development"
 
 My 7m presentation is followed by about 7 min of discussion. Check out the whole espisode if you have time.
 [![Totally Unscripted Episode 10](https://img.youtube.com/vi/mChjROHkkls/0.jpg)](https://youtu.be/mChjROHkkls?t=56m3s)
