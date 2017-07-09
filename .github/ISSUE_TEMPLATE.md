@@ -1,8 +1,8 @@
 **_objective / purpose_**  
 
 **_completion checklist_** 
-- [ ] Discovered in: whichxyz  
-- [ ] Resolved in: whichxyz  
+- [ ] Discovered in: whichx.y.z or n/a  
+- [ ] Resolved/introduced in: whichx.y.z  
 - [ ] Design Ready - labels, estimates
 - [ ] Development Ready - design and change list created, updated complexity label and estimates
 - [ ] Changes Listed  (mark each member as completed update as needed)
