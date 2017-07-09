@@ -11,10 +11,11 @@
   - [ ] three  
   - [ ] four  
   - [ ] five  
-- [ ] Developer Tested - Test Copies (DA!s and Release Candidate) 
+- [ ] Developer Tested - Test Copies (Disposable Alpha "DA!s" and Release Candidate) 
 
 POST LIVE:
 - [ ] Beta Tested - Live  
+- [ ] Customer Experience - Live analytics reveal working for customers  
 
 **_full pipeline documentation_** 
 --- 
@@ -24,3 +25,5 @@ POST LIVE:
 # Solution Implementation Notes  
 ## Developer Testing- Disposable Alpha and Release Candidate  
 ## Live Testing - Beta  
+## Customer Experience - Re-open and append if issues for customers
+
