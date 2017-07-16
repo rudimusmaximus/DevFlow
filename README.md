@@ -9,10 +9,10 @@ This repo will be used to demonstrate the described 'development work flow' for 
 
 **v0.1.0 "empty shell"** - the basic repository with .github folder of templates for contributing, issues, and pull requests and without code  
 **v0.2.0 "namespace w semantic versioning"** - a few files to establish .gs namespace for our work  
-**v1.0.0 "minimal addon for sheets"** - Demonstratable, can clone and publish test as addon; a basic sidebar and at least one function to demonstrate changes, workflow start and restart  
+**v1.0.0 "minimal addon for sheets"** - Demonstrable, can clone and publish test as addon; a basic sidebar and at least one function to demonstrate changes, workflow start and restart  
 **v1.1.0 "what's new"** - the what's new approach from earlier TU Episode  
-**v1.2.0 "make test ready"** - automation of applying naming standards during script development and sheets testing
-**v1.3.0 "tbd" - open for suggestions
+**v1.2.0 "make test ready"** - automation of applying naming standards during script development and sheets testing  
+**v1.3.0 "tbd"** - open for suggestions
 
 ## To Use
  - [x] Star and watch this repo for ongoing updates
@@ -31,3 +31,91 @@ This repo will be used to demonstrate the described 'development work flow' for 
 
 My 7m presentation is followed by about 7 min of discussion. Check out the whole episode if you have time.
 [![Totally Unscripted Episode 10](https://img.youtube.com/vi/mChjROHkkls/0.jpg)](https://youtu.be/mChjROHkkls?t=56m3s)
+
+## See Also  
+Our contributing guidelines in code repo file "DevFlow/.github/CONTRIBUTING.md" or from link when opening a new issue
+### Back Ground Reading (inspiring this dev flow)   
+[“A Successful Git branching model” by Vincent Driessen](http://nvie.com/posts/a-successful-git-branching-model/)  
+[“Better Software & Stronger Teams: Project Management for GitHub” by By Matt Butler and Paige Paquette of ZenHub](https://www.zenhub.com/book/github-project-management)   
+[“Comparing Workflows” by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows)  
+[“Make The Product Backlog DEEP” by Roman Pichler](http://www.romanpichler.com/blog/make-the-product-backlog-deep/)  
+[“Post-Agile: A Design Thinking Approach to Software Development” by Tom Dabson](https://www.artefactgroup.com/articles/post-agile-a-design-thinking-approach-to-software-development/)  
+[“Semantic Versioning”](http://semver.org)  
+
+# Implement for yourself
+## Overview  
+![image](https://user-images.githubusercontent.com/21182598/28250248-8edf5420-6a29-11e7-8e7a-84592f623c55.png)
+
+## Tools with links  
+[GitHub](https://github.com/) - Remote Origin or “truth” repo hosted on private or public repository. With the following standards:   
+
+-*Git Flow* - branch and release tagging approach; see reading list and also GitKraken; enables scalable workflow as you add developers and repositories.  
+-*Semantic Versioning 2.0.0* - referred to and modified in creating our own, consistently applied approach during development and for live releases. Tied to our analytics, release tagging, and code changes.  
+
+[ZenHub](https://www.zenhub.com/) - integrates natively with GitHub's user interface providing a layer of planning without context switching; burndown charts, Velocity tracking, and Release reports powered by live GitHub data. Keeps more people closer to the code.  
+### Work on developer’s local machine  
+[Atom](https://atom.io/) - hackable text editor for Windows, Mac AND Linux.  
+
+[GitKraken](https://www.gitkraken.com/) - Git GUI for Windows, Mac AND Linux. Free for open source, educational, non‑profit, or personal use.
+### Work in developer’s web editor
+[G Drive Script editor - best in Chrome](https://script.google.com)  
+
+[GAS Github Assistant - Chrome extension](https://chrome.google.com/webstore/detail/lfjcgcmkmjjlieihflfhjopckgpelofo)  
+
+## Costs (confirm on sites)
+Google accounts are separate.
+
+Tool | Free | Paid
+-- | -- | --
+1 GitHub | public repos | $7/m Developer 25/m Org team w/ first 5 more at 9per
+2 ZenHub | < 6 people | $5 user/m on 6 or more
+3 Atom | open source | open source
+4 GitKraken | sometimes w/o conflict tool | 49/yr Ind user 390/yr 10 users
+5 Script Editor with  6 GAS GH Assistant | open source | open source
+Total | 0 | Affordable : )
+
+## Practices and Guiding principles
+<move to contributing>
+
+Make a git flow that works for you by experimenting; enforce your own semantic versioning
+Automate for consistency and to reduce friction for good testing practices. Make your own automation or procedures to help enforce naming conventions and good testing practices. As you propagate scripts and test files (target sheets for example), it’s a lot easier to clean up if you’ve standardized the look and feel of your dev flow to include testing by developers and others alike. (watch for a future update on the DevFlow repo)
+Make and use templates for repos of the same kind; this can be done inside GitHub’s UI. For example,
+README.md
+.gitignore ( https://www.gitignore.io )
+.github/CONTRIBUTING.md
+.github/ISSUE_TEMPLATE.md
+.github/PULL_REQUEST_TEMPLATE.md
+Also, consider consistent folder and file naming together with nested namespacing for complex code; whatever works for you
+Make a label scheme that goes beyond type to fuel estimates, drive work priority,  improve visibility, and enable better reporting (next slide)
+Consider combining your approach to semantic versioning with your tagging, labeling scheme, and analytics approaches (whole lifecycle & supersystem)
+Use ZenHub task boards instead of GitHub projects; use GitHub issues as if they were work tickets or user stories; Use GitHub milestones-as-sprints to run your issues  through your boards. (a Scrum-like, post-agile world)
+Where possible, use board(s) across repos and leverage filtering.  KEEP IT VISIBLE
+In ZenHub, you “burn down sprints” and “burn up releases”
+When you have more developers, code reviews are a must and consider adding sprint “Retrospectives” post close as a pipeline to close the feedback loop
+
+## Things to watch out for
+<move to contributing>
+Versioning - Your script version in the google editor is not the add-on developer dashboard version IS NOT your semantic version in the script code!
+Releases - ZenHub Releases are NOT GitHub Releases (a tagged commit with a few extra features).
+Closing Issues - Don’t close issues using GitHub key words in pull requests or elsewhere unless you want them to go straight to the closed pipeline. Otherwise, use GitHub ‘#’ link notation and let your dev flow close the issue via the Zen Board or directly when finalizing notes.
+What’s Missing - The process of creating your add-on's listing and the basic graphics for ‘marketing collateral’/ promo tiles.
+Merging Zen Boards - When adding repos and merging task boards take care with how labels are treated. Test it out on practice repos.
+What’s Next? -  Please star or follow the repo on the next page and PLEASE leave comments, improvements, or suggestions there! THANKS.
+
+## Semantic Versioning
+<move to contributing>
+Semantic Versioning for a sheets add-on:
+vMajor.Minor.Patch-changeTopic.Iteration
+
+Maintain your add-ons in standalone scripts NOT container bound
+Keep track of your code’s semantic version number directly in your code
+Use it when release tagging and if you like, in your commit titles
+Increment like this:
+Full release might be v1.0.0
+Patch release v1.0.1
+Minor release v1.1.0
+Major release v2.0.0
+Development changes:
+v2.0.1-changeTopic.1
+v2.0.1-changeTopic.2
+Minor release v2.0.1
