@@ -40,7 +40,7 @@ Our contributing guidelines in code repo file "DevFlow/.github/CONTRIBUTING.md" 
 [“Comparing Workflows” by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows)  
 [“Make The Product Backlog DEEP” by Roman Pichler](http://www.romanpichler.com/blog/make-the-product-backlog-deep/)  
 [“Post-Agile: A Design Thinking Approach to Software Development” by Tom Dabson](https://www.artefactgroup.com/articles/post-agile-a-design-thinking-approach-to-software-development/)  
-[“Semantic Versioning”](http://semver.org)  
+[“Semantic Versioning”](http://semver.org) by [Tom Preston-Werner](http://tom.preston-werner.com/)  
 
 # Implement for yourself
 ## Overview  
@@ -73,49 +73,3 @@ Tool | Free | Paid
 4 GitKraken | sometimes w/o conflict tool | 49/yr Ind user 390/yr 10 users
 5 Script Editor with  6 GAS GH Assistant | open source | open source
 Total | 0 | Affordable : )
-
-## Practices and Guiding principles
-<move to contributing>
-
-Make a git flow that works for you by experimenting; enforce your own semantic versioning
-Automate for consistency and to reduce friction for good testing practices. Make your own automation or procedures to help enforce naming conventions and good testing practices. As you propagate scripts and test files (target sheets for example), it’s a lot easier to clean up if you’ve standardized the look and feel of your dev flow to include testing by developers and others alike. (watch for a future update on the DevFlow repo)
-Make and use templates for repos of the same kind; this can be done inside GitHub’s UI. For example,
-README.md
-.gitignore ( https://www.gitignore.io )
-.github/CONTRIBUTING.md
-.github/ISSUE_TEMPLATE.md
-.github/PULL_REQUEST_TEMPLATE.md
-Also, consider consistent folder and file naming together with nested namespacing for complex code; whatever works for you
-Make a label scheme that goes beyond type to fuel estimates, drive work priority,  improve visibility, and enable better reporting (next slide)
-Consider combining your approach to semantic versioning with your tagging, labeling scheme, and analytics approaches (whole lifecycle & supersystem)
-Use ZenHub task boards instead of GitHub projects; use GitHub issues as if they were work tickets or user stories; Use GitHub milestones-as-sprints to run your issues  through your boards. (a Scrum-like, post-agile world)
-Where possible, use board(s) across repos and leverage filtering.  KEEP IT VISIBLE
-In ZenHub, you “burn down sprints” and “burn up releases”
-When you have more developers, code reviews are a must and consider adding sprint “Retrospectives” post close as a pipeline to close the feedback loop
-
-## Things to watch out for
-<move to contributing>
-Versioning - Your script version in the google editor is not the add-on developer dashboard version IS NOT your semantic version in the script code!
-Releases - ZenHub Releases are NOT GitHub Releases (a tagged commit with a few extra features).
-Closing Issues - Don’t close issues using GitHub key words in pull requests or elsewhere unless you want them to go straight to the closed pipeline. Otherwise, use GitHub ‘#’ link notation and let your dev flow close the issue via the Zen Board or directly when finalizing notes.
-What’s Missing - The process of creating your add-on's listing and the basic graphics for ‘marketing collateral’/ promo tiles.
-Merging Zen Boards - When adding repos and merging task boards take care with how labels are treated. Test it out on practice repos.
-What’s Next? -  Please star or follow the repo on the next page and PLEASE leave comments, improvements, or suggestions there! THANKS.
-
-## Semantic Versioning
-<move to contributing>
-Semantic Versioning for a sheets add-on:
-vMajor.Minor.Patch-changeTopic.Iteration
-
-Maintain your add-ons in standalone scripts NOT container bound
-Keep track of your code’s semantic version number directly in your code
-Use it when release tagging and if you like, in your commit titles
-Increment like this:
-Full release might be v1.0.0
-Patch release v1.0.1
-Minor release v1.1.0
-Major release v2.0.0
-Development changes:
-v2.0.1-changeTopic.1
-v2.0.1-changeTopic.2
-Minor release v2.0.1
