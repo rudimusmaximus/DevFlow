@@ -21,6 +21,7 @@ This repo will be used to demonstrate the described 'development work flow' for 
  - [x] Follow contributing guidelines for adding new issues like requests for demos or your own idea
  - [x] Follow 'git flow' conventions for proposing new code; see git flow documentation; i recommend using GitKraken
 
+
 <img width="1161" alt="screen shot 2017-07-07 at 1 23 20 am" src="https://user-images.githubusercontent.com/21182598/27945543-1525cb6e-62b3-11e7-90ce-309bd7497480.png">  
 # Original Concept and Background
 ## The entire presentation  
@@ -73,3 +74,8 @@ Tool | Free | Paid
 4 GitKraken | sometimes w/o conflict tool | 49/yr Ind user 390/yr 10 users
 5 Script Editor with  6 GAS GH Assistant | open source | open source
 Total | 0 | Affordable : )
+
+## A Special Note on Chromebooks  
+It is possible to install and run some releases of Linux on a Chromebook that's been put into Developer mode.  
+Please see ["crouton" - Chromium OS Universal Chroot Environment](https://github.com/dnschneid/crouton)  
+The cool part here is that you are not dual booting and the Chromebook appears to receive updates and continues to support multiple users. I'm told this voids the warranty on the Chromebook? Worth exploring.
