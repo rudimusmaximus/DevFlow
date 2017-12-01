@@ -38,7 +38,7 @@ var DEV$ = (function(ns) {
     nested.Enums = {
       USER_FACING_NAME_OF_ADDON: "Dev Flow", // DEV$.Enums.USER_FACING_NAME_OF_ADDON
       //************************************************** SEMANTIC VERSIONING
-      CURRENT_ADDON_VERSION: "0.1.0-moreRandC.2" //DEV$.ThisAddon.Enums.CURRENT_ADDON_VERSION
+      CURRENT_ADDON_VERSION: "0.2.0" //DEV$.ThisAddon.Enums.CURRENT_ADDON_VERSION
 
     };
   return nested;
