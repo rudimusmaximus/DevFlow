@@ -69,4 +69,88 @@ Narrows down the user story for reproducing, trouble shooting, designing.
 - [x] You can copy labels between repos. See [this tool.](www.dorukdestan.com/github-label-manager/)  
 
 # Proposing Code Changes  
-<>update with semantic rules.
+Create issues with the label scheme above for any desired change. The issue template will give you a default layout. Start even with just the issue title only and when you want feedback on the item at whatever level of detail you are at, then move it into discussion.
+Once there, keep adding detail until there is enough to move it up in priority and until it is sprint ready.
+
+During sprints or coding sessions, developers will move items as described in the labels section.
+
+Feature, hotfix, and release branches are made in new branches from the latest develop and merged back into develop via pull requests or directly. All via the rules of the Git Flow best practices. New releases get tagged on master with a semantic version that matches the internal version in the code. New release branches are merged back into both master and develop so as to synch with any new development that may have taken place when the release branch was created. Similarly, hot fixes get merged into both the master and develop branches.
+
+** CONFIRM and REVIEW for accuracy against git flow practice and git kraken implementation by running demonstrations on a test repository while monitoring the git directly.  ** see
+
+## Semantic Versioning
+
+- ** vMajor.Minor.Patch-changeTopic.Iteration **  
+
+Remember to read this for introduction: [“Semantic Versioning”](http://semver.org) by [Tom Preston-Werner](http://tom.preston-werner.com/)  
+
+- [x] Maintain your add-ons in standalone scripts NOT container bound  
+- [x] Keep track of your code’s semantic version number directly in your code
+- [x] Use it when release tagging and if you like, in your commit titles
+
+### Increment like this:
+- Full release might be v1.0.0
+- Patch release v1.0.1
+- Minor release v1.1.0
+- Major release v2.0.0
+
+- Development changes:  
+ - v2.0.0-changeTopic.1
+ - v2.0.0-changeTopic.2  
+
+
+- Minor release v2.0.1  
+
+### Usage Notes  
+You should write up your own notes on when and how to implement the versioning as defined by Tom Preston-Werner above. See his document for getting started.
+#### Major
+#### Minor
+#### Patch
+#### ChangeTopic/branchName
+#### Iteration
+
+# Practices and Guiding principles
+Make a git flow that works for you by experimenting; enforce your own semantic versioning.  
+
+Automate for consistency and to reduce friction in your workflow; for example, make your own automation or procedures to help enforce naming conventions and good testing practices. As you propagate scripts and test files (target sheets for example), it’s a lot easier to clean up if you’ve standardized the look and feel of your dev flow to include testing by developers and others alike. (watch for a future update on the DevFlow repo).  
+
+Make and use template MD files for repos of the same kind; this can be done inside GitHub’s UI or in your local editor. For example,
+- README.md
+- .gitignore ( https://www.gitignore.io )
+- .github/CONTRIBUTING.md
+- .github/ISSUE_TEMPLATE.md
+- .github/PULL_REQUEST_TEMPLATE.md  
+
+Having these files in your repository gives you default content when you create an issue or pull request and the contributing.md is a place for establishing your guidelines that aren't in your readme.md.  
+
+Also, consider consistent folder and file naming together with nested namespacing for complex code; whatever works for you. Remember the mantra,  
+**"If it works, do it; if it doesn't, don't."**  
+
+Make a label scheme that goes beyond type to fuel estimates, drive work priority,  improve visibility, and enable better reporting.  
+
+Consider combining your approach to semantic versioning with your tagging, labeling scheme, and analytics approaches (whole lifecycle & supersystem).  
+
+**Use ZenHub task boards instead of GitHub projects; use GitHub issues as if they were work tickets or user stories; Use GitHub milestones-as-sprints to run your issues  through your boards. (a Scrum-like, post-agile world).**  
+
+Where possible, use board(s) across repos and leverage filtering.  KEEP IT VISIBLE.
+
+In ZenHub, you “burn down sprints” and “burn up releases”.
+
+When you have more developers, code reviews are a must and consider adding sprint “Retrospectives” post close as a pipeline to close the feedback loop
+
+# Things to watch out for
+These statements should be confirmed and carefully considered.
+
+**Versioning** - Your script version in the google editor is the add-on developer dashboard version BUT IS NOT your semantic version in the script code!  
+
+**Releases** - ZenHub Releases are NOT GitHub Releases (a tagged commit with a few extra features).  
+
+**Closing Issues** - Don’t close issues using GitHub key words in pull requests or elsewhere unless you want them to go straight to the closed pipeline. Otherwise, use GitHub ‘#’ link notation and let your dev flow close the issue via the Zen Board or directly when finalizing notes.  
+
+**What’s Missing** - The process of creating your add-on's listing and the basic graphics for ‘marketing collateral’/ promo tiles.  
+
+**Merging Zen Boards** - When adding repos and merging task boards take care with how labels are treated. Test it out on practice repos.  
+
+**What’s Next?** -  Please star or follow this repo. Open an issue anytime to leave comments, improvements, or suggestions there!
+
+THANKS and I hope this helps you.
