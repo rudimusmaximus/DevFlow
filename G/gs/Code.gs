@@ -33,7 +33,7 @@ function onInstall(e) {
  * project file.
  */
 function showSidebar() {
-  var ui = HtmlService.createTemplateFromFile('Sidebar')
+  var ui = HtmlService.createTemplateFromFile('G/html/Sidebar')
       .evaluate()
       .setTitle(SIDEBAR_TITLE)
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);
@@ -45,7 +45,7 @@ function showSidebar() {
  * project file.
  */
 function showDialog() {
-  var ui = HtmlService.createTemplateFromFile('Dialog')
+  var ui = HtmlService.createTemplateFromFile('G/html/Dialog')
       .evaluate()
       .setWidth(400)
       .setHeight(190)

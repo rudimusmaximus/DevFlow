@@ -3,7 +3,7 @@
   <head>
     <base target="_top">
     <!-- Use a templated HTML printing scriptlet to import common stylesheet -->
-    <?!= HtmlService.createHtmlOutputFromFile('Stylesheet').getContent(); ?>
+    <?!= HtmlService.createHtmlOutputFromFile('G/html/Stylesheet').getContent(); ?>
   </head>
   <body>
     <!-- Below is the HTML code that defines the sidebar element structure. -->
@@ -31,6 +31,6 @@
     </div>
 
     <!-- Use a templated HTML printing scriptlet to import JavaScript. -->
-    <?!= HtmlService.createHtmlOutputFromFile('SidebarJavaScript').getContent(); ?>
+    <?!= HtmlService.createHtmlOutputFromFile('G/html/SidebarJavaScript').getContent(); ?>
   </body>
 </html>
