@@ -7,12 +7,12 @@ This repo will be used to demonstrate the described 'development work flow' for 
 ## Current Release Intent
 <a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
 
-**v0.1.0 "empty shell"** - the basic repository with .github folder of templates for contributing, issues, and pull requests and without code  
-**v0.2.0 "namespace w semantic versioning"** - a few files to establish .gs namespace for our work  
-**v1.0.0 "minimal addon for sheets"** - Demonstrable, can clone and publish test as addon; a basic sidebar and at least one function to demonstrate changes, workflow start and restart  
-**v1.1.0 "what's new"** - the what's new approach from earlier TU Episode  
-**v1.2.0 "make test ready"** - automation of applying naming standards during script development and sheets testing  
-**v1.3.0 "tbd"** - open for suggestions
+**v0.1.0 "empty shell"** - the basic repository with .github folder of templates for contributing, issues, and pull requests and without code
+**v0.2.0 "namespace w semantic versioning"** - a few files to establish .gs namespace for our work
+**v0.3.0 "make test ready"** - automation of applying naming standards during script development and sheets testing
+**v1.0.0 "minimal addon for sheets"** - Demonstrable, can clone and publish test as addon; a basic sidebar and at least one function to demonstrate changes, workflow start and restart
+**v1.1.0 "what's new"** - the what's new approach from earlier TU Episode
+all future releases - star this repo and follow via zen board, fork and suggest, or create issues for requests
 
 ## To Use
  - [x] Star and watch this repo for ongoing updates
