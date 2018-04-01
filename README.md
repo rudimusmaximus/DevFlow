@@ -28,7 +28,7 @@ See tools section for links.
  - [x] Install ZenHub extension in Chrome or Firefox from the GitHub Marketplace
  - [x] Use the ZenHub task board to monitor flow of issues and to add to the discussion
  - [x] Follow contributing guidelines for adding new issues like requests for demos or your own idea
- - [x] Follow 'git flow' conventions for proposing new code; see git flow documentation; i recommend using GitKraken to initialize the Git Flow for your forked repository when working locally and then submitting a pull request to the develop branch of the main repository
+ - [x] Practice 'git flow' conventions in your local work; i recommend using GitKraken to initialize the Git Flow for your forked repository when working locally and then submitting a pull request to the develop branch of the main repository. Please make sure you have pulled the latest develop and are not submitting code with conflicts.
  - [x] Install GAS Github Assistant for working out of Google's online script editor
 
 
@@ -37,14 +37,17 @@ See tools section for links.
 ## The entire presentation  
 [Dev Flow by a Process Guy.pdf](https://github.com/rudimusmaximus/DevFlow/files/1130955/Dev.Flow.by.a.Process.Guy.pdf)
 
-## As presented in Totally Unscripted Episode 10
-### From "TU10: Professionalizing Google Apps Script Development"
+## As presented in Totally Unscripted Episode 10: Professionalizing Google Apps Script Development
+### Totally Unscripted: Episode 10 Highlights - Becoming a Google Apps Script Developer Zen Master
 
-My 7m presentation is followed by about 7 min of discussion. Check out the whole episode if you have time.
-[![Totally Unscripted Episode 10](https://img.youtube.com/vi/mChjROHkkls/0.jpg)](https://youtu.be/mChjROHkkls?t=56m3s)
+My 7m presentation is followed by about 7 min of discussion. Here is the original presentation in a highlight video.
+[![Totally Unscripted: Episode 10 Highlights - Becoming a Google Apps Script Developer Zen Master](https://img.youtube.com/vi/dW1rn_KD1OM/0.jpg)](https://youtu.be/dW1rn_KD1OM)  
+
+Check out the whole episode if you have time for other approaches and also the whole channel is a great resource for google apps script.  
+[Totally Unscripted Episode 10: Professionalizing Google Apps Script Development](https://youtu.be/mChjROHkkls?t=56m3s)  
 
 ## See Also  
-Our contributing guidelines in code repo file ".github/CONTRIBUTING.md" or from link when opening a new issue
+Our contributing guidelines in this repo's file ".github/CONTRIBUTING.md"
 ### Back Ground Reading (inspiring this dev flow)   
 [“A Successful Git branching model” by Vincent Driessen](http://nvie.com/posts/a-successful-git-branching-model/)  
 [“Better Software & Stronger Teams: Project Management for GitHub” by By Matt Butler and Paige Paquette of ZenHub](https://www.zenhub.com/book/github-project-management)   
