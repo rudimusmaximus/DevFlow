@@ -5,7 +5,7 @@ function logNamespaces() {
   var rcmStringified = JSON.stringify(DEV$, function(key, val) {
     return (typeof val === 'function') ? '[function]' : val;
   }, 3);
-  Logger.log('Greetings, \n   Add-on: ' + DEV$.ThisAddon.Enums.USER_FACING_NAME_OF_ADDON + ' Ver: ' + DEV$.ThisAddon.Enums.CURRENT_ADDON_VERSION + '\n   Template: ' + DEV$.ThisAddon.name + ' Ver: ' + DEV$.ThisAddon.Enums.SEMANTIC_VERSION_OF_TEMPLATE);
+  Logger.log('Greetings, \n   Add-on: ' + DEV$.Developer.Enums.USER_FACING_NAME_OF_ADDON + ' Ver: ' + DEV$.Developer.Enums.CURRENT_ADDON_VERSION + '\n   Template: ' + DEV$.Developer.name + ' Ver: ' + DEV$.Developer.Enums.SEMANTIC_VERSION_OF_TEMPLATE);
   Logger.log('\n-----DEV$ WITHOUT FUNCTIONS-----');
   Logger.log(JSON.stringify(DEV$, null, 3));
   Logger.log('\n-----DEV$ WITH FUNCTIONS-----');
@@ -30,16 +30,16 @@ var DEV$ = (function(ns) {
  * DECLARE THE NESTED NAMESPACES  ***  NAME$PACE.Grouping.Subset.function - LEVELS 1, 2, 3, and 4
  *****/
 /**
- * DEV$.ThisAddon = Dev Flow Name Space > Add-on Template > Subset member declarations
+ * DEV$.Developer = Dev Flow Name Space > Add-on Template > Subset member declarations
  */
 (function(nested) {
   nested.name = "A Dev Flow Template 'DevFlow'",
-    nested.description = "Template declaration. See DEV$.ThisAddon.*.gs for level 3 members.",
+    nested.description = "Template declaration. See DEV$.Developer.*.gs for level 3 members.",
     nested.Enums = {
       USER_FACING_NAME_OF_ADDON: "Dev Flow", // DEV$.Enums.USER_FACING_NAME_OF_ADDON
       //************************************************** SEMANTIC VERSIONING
-      CURRENT_ADDON_VERSION: "0.2.0" //DEV$.ThisAddon.Enums.CURRENT_ADDON_VERSION
+      CURRENT_ADDON_VERSION: "0.2.0-collaborationAnnouncement.1" //DEV$.Developer.Enums.CURRENT_ADDON_VERSION
 
     };
   return nested;
-})(DEV$.ThisAddon = DEV$.ThisAddon || {}); //creates level 2 branch
+})(DEV$.Developer = DEV$.Developer || {}); //creates level 2 branch

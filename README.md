@@ -1,25 +1,35 @@
 # DevFlow
 A Dev Flow for Google App script. Starter templates, a label scheme, the presentation with many links for reading further, a list of what to install and what it might cost you.
 
-This repo will be used to demonstrate the described 'development work flow' for creating and maintaining google app script. It will be updated over time to demonstrate various best practices and general demonstrations; some inspired by topics covered in the Totally Unscripted series and posts in the over 20,000 member strong
-[G+ Google Apps Script Community](https://plus.google.com/u/0/communities/102471985047225101769) and others by my own private projects.
+This repository will be used to demonstrate the described 'development work flow' for creating and maintaining Google Apps Script. It will be updated over time to demonstrate various best practices and general demonstrations; some inspired by topics covered in the Totally Unscripted series and posts in the over 20,000 member strong [G+ Google Apps Script Community](https://plus.google.com/u/0/communities/102471985047225101769) and others by my own private projects.  
 
-## Current Release Intent
+This addon is intended to be a learning tool whose users can contribute via fork and pull or just follow along.
+
+Anyone can learn to run a test as addon in sheets and quite a bit more via this repository example.
+
+I hope it helps you on your journey and that we will see some contribution by you in the form of discussion or new or improved demos.
+
+## Current Release Intent  
+Please note collaboration is open to all starting with release v1.0.0  
 <a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
 
-**v0.1.0 "empty shell"** - the basic repository with .github folder of templates for contributing, issues, and pull requests and without code
-**v0.2.0 "namespace w semantic versioning"** - a few files to establish .gs namespace for our work
-**v0.3.0 "make test ready"** - automation of applying naming standards during script development and sheets testing
-**v1.0.0 "minimal addon for sheets"** - Demonstrable, can clone and publish test as addon; a basic sidebar and at least one function to demonstrate changes, workflow start and restart
-**v1.1.0 "what's new"** - the what's new approach from earlier TU Episode
-all future releases - star this repo and follow via zen board, fork and suggest, or create issues for requests
+Release | Description | Collaboration Status  
+---|---|---  
+**v0.1.0 "empty shell"** | the basic repository with .github folder of templates for contributing, issues, and pull requests and without code | Closed
+**v0.2.0 "namespace w semantic versioning"** | a few files to establish .gs namespace for our work | Closed  
+**v0.3.0 "make test ready"** | automation of applying naming standards during script development and sheets testing See epic https://github.com/rudimusmaximus/DevFlow/issues/18 to track progress | Closed  
+**v1.0.0 "minimal addon for sheets"** | Demonstrable, can clone and publish test as addon; a basic sidebar with workflow start and restart and menu with at least one example demo, issues to list out ongoing and upcoming demo ideas, kick off meetings and working sessions to solicit feedback on contributors. - // TODO: list a few issues by hash link reference | Open to all (volunteer today)
+**v1.1.0 "what's new"** | the what's new approach from earlier TU Episode | Open  
+**All Future Releases** | star this repo and follow via zen board, fork and suggest, or create issues for requests - // TODO: list a few issues by hash link reference | Open (see 'Zen Board' for all DevFlow)
 
 ## To Use
+See tools section for links.  
  - [x] Star and watch this repo for ongoing updates
  - [x] Install ZenHub extension in Chrome or Firefox from the GitHub Marketplace
  - [x] Use the ZenHub task board to monitor flow of issues and to add to the discussion
  - [x] Follow contributing guidelines for adding new issues like requests for demos or your own idea
- - [x] Follow 'git flow' conventions for proposing new code; see git flow documentation; i recommend using GitKraken
+ - [x] Follow 'git flow' conventions for proposing new code; see git flow documentation; i recommend using GitKraken to initialize the Git Flow for your forked repository when working locally and then submitting a pull request to the develop branch of the main repository
+ - [x] Install GAS Github Assistant for working out of Google's online script editor
 
 
 <img width="1161" alt="screen shot 2017-07-07 at 1 23 20 am" src="https://user-images.githubusercontent.com/21182598/27945543-1525cb6e-62b3-11e7-90ce-309bd7497480.png">  
@@ -34,7 +44,7 @@ My 7m presentation is followed by about 7 min of discussion. Check out the whole
 [![Totally Unscripted Episode 10](https://img.youtube.com/vi/mChjROHkkls/0.jpg)](https://youtu.be/mChjROHkkls?t=56m3s)
 
 ## See Also  
-Our contributing guidelines in code repo file "DevFlow/.github/CONTRIBUTING.md" or from link when opening a new issue
+Our contributing guidelines in code repo file ".github/CONTRIBUTING.md" or from link when opening a new issue
 ### Back Ground Reading (inspiring this dev flow)   
 [“A Successful Git branching model” by Vincent Driessen](http://nvie.com/posts/a-successful-git-branching-model/)  
 [“Better Software & Stronger Teams: Project Management for GitHub” by By Matt Butler and Paige Paquette of ZenHub](https://www.zenhub.com/book/github-project-management)   
