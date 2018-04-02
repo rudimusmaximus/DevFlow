@@ -17,13 +17,13 @@ Release | Description | Collaboration Status
 ---|---|---  
 **v0.1.0 "empty shell"** | the basic repository with .github folder of templates for contributing, issues, and pull requests and without code | Closed
 **v0.2.0 "namespace w semantic versioning"** | a few files to establish .gs namespace for our work | Closed  
-**v0.3.0 "make test ready"** | automation of applying naming standards during script development and sheets testing See epic https://github.com/rudimusmaximus/DevFlow/issues/18 to track progress | Closed  
+**v0.3.0 "make test ready"** | automation of applying naming standards during script development and sheets testing See issue https://github.com/rudimusmaximus/DevFlow/issues/8 to track progress | Closed  
 **v1.0.0 "minimal addon for sheets"** | Demonstrable, can clone and publish test as addon; a basic sidebar with workflow start and restart and menu with at least one example demo, issues to list out ongoing and upcoming demo ideas, kick off meetings and working sessions to solicit feedback on contributors. - // TODO: list a few issues by hash link reference | Open to all (volunteer today)
 **v1.1.0 "what's new"** | the what's new approach from earlier TU Episode | Open  
 **All Future Releases** | star this repo and follow via zen board, fork and suggest, or create issues for requests - // TODO: list a few issues by hash link reference | Open (see 'Zen Board' for all DevFlow)
 
 ## To Use
-See tools section for links.  
+See tools section for links. Also, see the section "How to participate".  
  - [x] Star and watch this repo for ongoing updates
  - [x] Install ZenHub extension in Chrome or Firefox from the GitHub Marketplace
  - [x] Use the ZenHub task board to monitor flow of issues and to add to the discussion
@@ -44,7 +44,7 @@ My 7m presentation is followed by about 7 min of discussion. Here is the origina
 [![Totally Unscripted: Episode 10 Highlights - Becoming a Google Apps Script Developer Zen Master](https://img.youtube.com/vi/dW1rn_KD1OM/0.jpg)](https://youtu.be/dW1rn_KD1OM)  
 
 Check out the whole episode if you have time for other approaches and also the whole channel is a great resource for google apps script.  
-[Totally Unscripted Episode 10: Professionalizing Google Apps Script Development](https://youtu.be/mChjROHkkls?t=56m3s)  
+[Totally Unscripted Episode 10: Professionalizing Google Apps Script Development](https://youtu.be/mChjROHkkls)  
 
 ## See Also  
 Our contributing guidelines in this repo's file ".github/CONTRIBUTING.md"
@@ -92,3 +92,21 @@ Total | 0 | Affordable : )
 It is possible to install and run some releases of Linux on a Chromebook that's been put into Developer mode.  
 Please see ["crouton" - Chromium OS Universal Chroot Environment](https://github.com/dnschneid/crouton)  
 The cool part here is that you are not dual booting and the Chromebook appears to receive updates and continues to support multiple users. I'm told this voids the warranty on the Chromebook? Worth exploring.
+
+# How To Participate in the DevFlow Repository  
+This section brought to you by a short side project (DevFlow 4 FEW-D) whose site link is [Grow With Google Front End Web Development Track - Side Project](few-d.redcrowmethods.com)  Visit that for site for meetings, replay links, and contributors as we demonstrate the collaboration phase for DevFlow v1.0.0
+
+**[this section to be updated when the project is completed April 11, 2018]**
+
+## Quick route "i just want to explore the addon demo"  
+TODO: DevFlow 4 FEW-D
+## Contributor route "i'd like to try out the DevFlow by participating in the project"  
+TODO: DevFlow 4 FEW-D
+## Implementor "i want to customize DevFlow and make it my own for one or more projects"  
+[future project]
+
+The DevFlow for FEW-D is a side project to demonstrate collaboration on a GitHub repository designed to socialize a 'development work flow' for creating and maintaining Google Apps Script. Because this repo will include a sheets addon, participants will be able to explore the world of Google Apps Scripting in the useful space of spreadsheets, directly applying recently acquired skills AND laying a framework for much more.
+ - Apply your CSS, HTML, and JavaScript skills in a new context
+ - Expand your networks
+ - Contribute to an open source project
+ - Learn about Google Apps Scripts and Sheets Addons (quickly)
