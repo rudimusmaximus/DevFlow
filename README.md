@@ -102,7 +102,14 @@ This section brought to you by a short side project (DevFlow 4 FEW-D) whose site
 ## Quick route "i just want to explore the addon demo"  
 TODO: DevFlow 4 FEW-D
 ## Contributor route "i'd like to try out the DevFlow by participating in the project"  
-TODO: DevFlow 4 FEW-D
+### Phase II notes
+1. Add your name and GitHub handle to the bottom of this list:
+ - Rob Goelz  @RobGoelz
+ - Your Name @YourHandle
+2. Save this file and commit and push to your origin/develop branch.
+
+3. Submit a pull request from this branch to the development branch.
+
 ## Implementor "i want to customize DevFlow and make it my own for one or more projects"  
 [future project]
 
