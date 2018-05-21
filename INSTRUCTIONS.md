@@ -12,3 +12,4 @@
 10. Iterate as needed and each sem ver change requires a repeat of steps 7,8,9; you can push any iteration along they way or just the last one to your origin branch (using GAS GitHub Assistant). Then, you canu can pull from origin as necessary.
 
 DevFlow now has same name scripts and target sheets iterating on Semantic Versions.
+Review in wednesday sessions scheduled.
