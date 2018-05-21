@@ -23,7 +23,7 @@ function logNamespaces() {
  */
 var DEV$ = (function(ns) {
   ns.author = "Raul Flores, Jr",
-    ns.description = "A process guy's dev flow demonstration and GAS sheets addon demos";
+  ns.description = "A process guy's dev flow demonstration and GAS sheets addon demos";
   return ns;
 })(DEV$ || {});
 /****
@@ -38,7 +38,7 @@ var DEV$ = (function(ns) {
     nested.Enums = {
       USER_FACING_NAME_OF_ADDON: "Dev Flow", // DEV$.Enums.USER_FACING_NAME_OF_ADDON
       //************************************************** SEMANTIC VERSIONING
-      CURRENT_ADDON_VERSION: "0.3.0" //DEV$.ThisAddon.Enums.CURRENT_ADDON_VERSION
+      CURRENT_ADDON_VERSION: "0.3.0-makeTestReady.1" //DEV$.Developer.Enums.CURRENT_ADDON_VERSION
 
     };
   return nested;

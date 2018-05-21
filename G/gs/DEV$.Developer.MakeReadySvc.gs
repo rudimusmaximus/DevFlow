@@ -167,38 +167,38 @@ MakeReadySvcRcdDef.prototype.initializeFromNothing = function() {
   } //end determineGoListStatus
   //ENCLOSED FUNCTIONs=================================end
 }; //end initializeFromNothing
-// //initialize - makeReadySvcRcd.initializeFromGiven(twoDRow);
-// MakeReadySvcRcdDef.prototype.initializeFromGiven = function(twoDRow) {
-//   this.year          = twoDRow[0][0];
-//   this.month         = twoDRow[0][1];
-//   this.weekNum       = twoDRow[0][2];
-//   this.eventStampGMT = twoDRow[0][3];
-//   this.activeUser    = twoDRow[0][4];
-//   this.statedDomain  = twoDRow[0][5];
-//   this.addOnVersion  = twoDRow[0][6];
-//   this.scriptId      = twoDRow[0][7];
-//   this.goListStatus  = twoDRow[0][8];
-//   this.scriptName    = twoDRow[0][9];
-//   this.scriptUrl     = twoDRow[0][10];
-//   return;
-// }; //end initializeFromGiven
+//initialize - makeReadySvcRcd.initializeFromGiven(twoDRow);
+MakeReadySvcRcdDef.prototype.initializeFromGiven = function(twoDRow) {
+  this.year          = twoDRow[0][0];
+  this.month         = twoDRow[0][1];
+  this.weekNum       = twoDRow[0][2];
+  this.eventStampGMT = twoDRow[0][3];
+  this.activeUser    = twoDRow[0][4];
+  this.statedDomain  = twoDRow[0][5];
+  this.addOnVersion  = twoDRow[0][6];
+  this.scriptId      = twoDRow[0][7];
+  this.goListStatus  = twoDRow[0][8];
+  this.scriptName    = twoDRow[0][9];
+  this.scriptUrl     = twoDRow[0][10];
+  return;
+}; //end initializeFromGiven
 
-// //makeFullServiceRcdRow - makeReadySvcRcd.makeFullServiceRcdRow();
-// MakeReadySvcRcdDef.prototype.makeFullServiceRcdRow = function() {
-//   var fullServiceRcdRow = [
-//     [
-//       this.year,
-//       this.month,
-//       this.weekNum,
-//       this.eventStampGMT,
-//       this.activeUser,
-//       this.statedDomain,
-//       this.addOnVersion,
-//       this.scriptId,
-//       this.goListStatus,
-//       this.scriptName,
-//       this.scriptUrl
-//     ]
-//   ];
-//   return fullServiceRcdRow;//as two dimensional array
-// };
+//makeFullServiceRcdRow - makeReadySvcRcd.makeFullServiceRcdRow();
+MakeReadySvcRcdDef.prototype.makeFullServiceRcdRow = function() {
+  var fullServiceRcdRow = [
+    [
+      this.year,
+      this.month,
+      this.weekNum,
+      this.eventStampGMT,
+      this.activeUser,
+      this.statedDomain,
+      this.addOnVersion,
+      this.scriptId,
+      this.goListStatus,
+      this.scriptName,
+      this.scriptUrl
+    ]
+  ];
+  return fullServiceRcdRow;//as two dimensional array
+};
