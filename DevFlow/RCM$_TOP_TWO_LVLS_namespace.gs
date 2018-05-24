@@ -22,7 +22,7 @@ var RCM$ = (function(ns) {
   nested.Enums = {
     USER_FACING_NAME_OF_ADDON       : "DevFlow", //RCM$.Enums.USER_FACING_NAME_OF_ADDON
     //************************************************** SEMANTIC VERSIONING
-    CURRENT_ADDON_VERSION           : "0.3.0-makeTestReady.11",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in GO LISTING AND DEV FLOW ****
+    CURRENT_ADDON_VERSION           : "0.3.0-makeTestReady.12",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in GO LISTING AND DEV FLOW ****
     /****************************** EXTERNAL REFERENCE SHEETS USED IN ADD-ON'S ECOSYSTEM
      * e3.Analytics             = Analytics for this add-on //simplified for DevFlow use
      * e4.GoListSvc             =  goListed activity *** used in GO LISTING AND DEV FLOW ****
@@ -35,8 +35,8 @@ var RCM$ = (function(ns) {
     REDCROWCONSULTING_STATED_DOMAIN_CODE : "@RCC",
     REDCROWMETHODS_STATED_DOMAIN_CODE    : "@RCM",
     DISPOSABLE_ALPHA_STATED_DOMAIN_CODE  : "DA!", //is unrecognized and likely a "disposable alpha script which could be in any domain and if so the user email will be a developer and give it away; note: this value is checked in go listing so change with care
-    HTML_SIDEBAR : "placeholder for path to sidebar for main welcome start workflow"
-    HTML_NEW_VERSION_DIALOG      : "reserved for path when this functionality is available",
+    HTML_SIDEBAR : "placeholder for path to sidebar for main welcome start workflow",
+    HTML_NEW_VERSION_DIALOG      : "reserved for path when this functionality is available"
   };
   return nested;
 })(RCM$.ThisAddon = RCM$.ThisAddon || {}); //creates level 2 branch

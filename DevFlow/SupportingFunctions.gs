@@ -69,3 +69,15 @@ function makeDuration(startTime){
 //  return duration;
   return runTime;
 }
+/**
+ * Function that describes the namespaces without and with functions by writing to the log a stringified object
+ */
+function logNamespaces() {
+  var rcmStringified = JSON.stringify(RCM$, function(key, val) { return (typeof val === 'function') ? '[function]' : val; }, 3);
+  Logger.log('\n-----RCM$ WITHOUT FUNCTIONS-----');
+  Logger.log(JSON.stringify(RCM$,null,3));
+  Logger.log('\n-----RCM$ WITH FUNCTIONS-----');
+  Logger.log(rcmStringified);
+  var jsonObject = JSON.parse(rcmStringified);
+  return true;
+}
