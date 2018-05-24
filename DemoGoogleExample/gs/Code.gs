@@ -1,7 +1,3 @@
-/**
- * @OnlyCurrentDoc  Limits the script to only accessing the current spreadsheet.
- */
-
 var DIALOG_TITLE = 'Example Dialog';
 var SIDEBAR_TITLE = 'Example Sidebar';
 

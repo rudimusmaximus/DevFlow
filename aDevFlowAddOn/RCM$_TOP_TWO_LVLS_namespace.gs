@@ -22,7 +22,7 @@ var RCM$ = (function(ns) {
   nested.Enums = {
     USER_FACING_NAME_OF_ADDON       : "DevFlow", //RCM$.Enums.USER_FACING_NAME_OF_ADDON
     //************************************************** SEMANTIC VERSIONING
-    CURRENT_ADDON_VERSION           : "0.3.0-makeTestReady.13",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in GO LISTING AND DEV FLOW ****
+    CURRENT_ADDON_VERSION           : "0.3.0-makeTestReady.14",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in GO LISTING AND DEV FLOW ****
     /****************************** EXTERNAL REFERENCE SHEETS USED IN ADD-ON'S ECOSYSTEM
      * e3.Analytics             = Analytics for this add-on //simplified for DevFlow use
      * e4.GoListSvc             =  goListed activity *** used in GO LISTING AND DEV FLOW ****
