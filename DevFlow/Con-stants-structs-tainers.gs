@@ -1,25 +1,8 @@
-//extend or establish namespace object if in another file
-var RCM$     = RCM$         || {};//top level regardless of file load order
-RCM$.CoreOne = RCM$.CoreOne || {};//2nd level member regardless of file load order
-/****
- * 'POPULATE' THE NAMESPACE - establish 3rd level members and define additional methods and properties
- *****/
 /**
-* RCM$.CoreOne.Containters - this is for constructors, constants/literals needing to be integrated into enums, and special object containers
-* there are also some functions that may need to be moved to a Util or some other appropriate spot (see above)
-* Level 3 description with enums
-* RCM$.CoreOne.NewNew = Red Crow Methods Name Space > Add-on Template > New New
+* Con-stants-structs-tainers.gs - this is for constructors, constants/literals needing to be integrated into enums, and special object containers
+* there are also some functions that may need to be moved to a Util or some other appropriate spot
 */
-(function (nested) {
- nested.description = "Add-on Template > Containers; WIP Con-stants-structs-tainers";
- nested.Enums = {
-   AN_EXAMPLE: "EXAMPLE" //The example value when referenced
- };
- return nested;
-})(RCM$.CoreOne.Containers = RCM$.CoreOne.Containers || {});
-/****
- * BEGIN WORKING CODE NOT YET INCORPORATED TO NAMESPACING
- *****/
+
 /**
  *  Returns the requested hardcoded literal as a string when logic is required
  * to determine. otherwise, use appropriate Enums.
@@ -306,7 +289,3 @@ function UserResponseObjDef_(responseAction, answerString){
   this.responseAction   = responseAction;
   this.answerString     = answerString;
 }
-
-/****
- * END WORKING CODE NOT YET INCORPORATED TO NAMESPACING
- *****/

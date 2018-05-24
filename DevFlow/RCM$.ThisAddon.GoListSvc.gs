@@ -1,12 +1,12 @@
 //extend or establish namespace object if in another file
 var RCM$       = RCM$           || {};//top level regardless of file load order
-RCM$.CoreOne   = RCM$.CoreOne   || {};//2nd level member regardless of file load order
-RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load order; here for the go list sheet defined there
+RCM$.LibCc     = RCM$.LibCc     || {};//2nd level member regardless of file load order
+RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load order;
 /****
  * 'POPULATE' THE NAMESPACE - establish 3rd level members and define additional methods and properties
  *****/
 /**
- * RCM$.CoreOne.GoListSvc - part of the Red Crow Dev Flow
+ * RCM$.ThisAddon.GoListSvc - part of the Red Crow Dev Flow
  * INTRODUCING 'GoListing' achieved via mini-service here in a namespace and run prior to testing or deployment post changes;
  * includes references to external G sheet for persistence of script information not available during user run time. The 'goListTheCurrentScript function' in Deployment.gs is run "
  * by the  by person making changes with edit access to script (while developers test alpha, release, and ready candidates, designated testers never touch the code and only test beta"
@@ -16,14 +16,14 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
  * for production users, it consists in versioning the script and publishing the registered script to the google developer dashboard"
  * Registered means code knows the scripts and all externals required like sheets, 3rd party webhooks, others as needed";
  * Level 3 description with enums
- * RCM$.CoreOne.goListSvc = Red Crow Methods Name Space > Add-on Template > Go List Service
+ * RCM$.ThisAddon.goListSvc = Red Crow Methods Name Space > Add-on Template > Go List Service
  */
 (function (nested) {
-  nested.description = "Add-on Template > go list service; RCM$.CoreOne.GoListSvc - part of the Red Crow Dev Flow"
+  nested.description = "Add-on Template > go list service; RCM$.ThisAddon.GoListSvc - part of the Red Crow Dev Flow"
   return nested;
-})(RCM$.CoreOne.GoListSvc = RCM$.CoreOne.GoListSvc || {});
+})(RCM$.ThisAddon.GoListSvc = RCM$.ThisAddon.GoListSvc || {});
 
-//RCM$.CoreOne.goListSvc.setScriptProperties
+//RCM$.ThisAddon.goListSvc.setScriptProperties
 (function (nested) {
   /**
   * primes the script properties (name, id, version, url) leaving any existing script properties
@@ -39,9 +39,9 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
     return x;
   };
   return nested;
-})(RCM$.CoreOne.GoListSvc);
+})(RCM$.ThisAddon.GoListSvc);
 
-//RCM$.CoreOne.goListSvc.renameScript
+//RCM$.ThisAddon.goListSvc.renameScript
 (function (nested) {
   /**
   * renames current script with name given. refresh to see new name.
@@ -57,9 +57,9 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
     return Drive.Files.patch(fileResource, fileId);
   };
   return nested;
-})(RCM$.CoreOne.GoListSvc);
+})(RCM$.ThisAddon.GoListSvc);
 
-//RCM$.CoreOne.goListSvc.createStandardName
+//RCM$.ThisAddon.goListSvc.createStandardName
 (function (nested) {
   /**
   * returns name using standards based on semantic version rules and whether code is a registered script <>update
@@ -83,9 +83,9 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
     return standardName;
   };
   return nested;
-})(RCM$.CoreOne.GoListSvc);
+})(RCM$.ThisAddon.GoListSvc);
 
-//RCM$.CoreOne.goListSvc.isGoListed
+//RCM$.ThisAddon.goListSvc.isGoListed
 (function (nested) {
   /**
   * checks if semantic version and scriptId has already been go listed
@@ -121,9 +121,9 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
     return response;
   };
   return nested;
-})(RCM$.CoreOne.GoListSvc);
+})(RCM$.ThisAddon.GoListSvc);
 
-//RCM$.CoreOne.goListSvc.scriptGoNoGo
+//RCM$.ThisAddon.goListSvc.scriptGoNoGo
 (function (nested) {
    /**
    * scriptGoNoGo makes sure script has been goListed for execution
@@ -133,11 +133,11 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
    * returns true for go and false for noGo
    */
   nested.scriptGoNoGo = function() {
-    var retrievedGoListRcdValues = RCM$.CoreOne.GoListSvc.isGoListed(RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION, ScriptApp.getScriptId());
+    var retrievedGoListRcdValues = RCM$.ThisAddon.GoListSvc.isGoListed(RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION, ScriptApp.getScriptId());
     if (retrievedGoListRcdValues) {
         var localGoListRcdObj = new GoListSvcRcdDef();
         localGoListRcdObj.initializeFromGiven(retrievedGoListRcdValues);
-        RCM$.CoreOne.GoListSvc.setScriptProperties(localGoListRcdObj, true);//prime the properties so up to date if used later as they are in certain other webhooks
+        RCM$.ThisAddon.GoListSvc.setScriptProperties(localGoListRcdObj, true);//prime the properties so up to date if used later as they are in certain other webhooks
         PropertiesService.getScriptProperties().setProperty("GoNoGo Status", 'Y');
         return true;
       } else {
@@ -146,7 +146,7 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
       }
   }; //end scriptGoNoGo
   return nested;
-})(RCM$.CoreOne.GoListSvc);
+})(RCM$.ThisAddon.GoListSvc);
 
 //END NAMESPACE
 
@@ -194,10 +194,10 @@ GoListSvcRcdDef.prototype.initializeFromNothing = function() {
   */
   function renameThisScript(scriptId, goListStatus, newDate, newDescription){
     Logger.log("Creating standard name...");
-    var newName = RCM$.CoreOne.GoListSvc.createStandardName(goListStatus, newDate);
+    var newName = RCM$.ThisAddon.GoListSvc.createStandardName(goListStatus, newDate);
 
     Logger.log("Renaming script to:\n'" + newName + "'...");
-    RCM$.CoreOne.GoListSvc.renameScript(scriptId, newName, newDescription);
+    RCM$.ThisAddon.GoListSvc.renameScript(scriptId, newName, newDescription);
     return newName;
   }//end renameThisScript
   /**

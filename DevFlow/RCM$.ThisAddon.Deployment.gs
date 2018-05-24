@@ -1,12 +1,13 @@
 //extend or establish namespace object if in another file
-var RCM$     = RCM$         || {};//top level regardless of file load order
-RCM$.CoreOne = RCM$.CoreOne || {};//2nd level member regardless of file load order
+var RCM$       = RCM$           || {};//top level regardless of file load order
+RCM$.LibCc     = RCM$.LibCc     || {};//2nd level member regardless of file load order
+RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load order
 /****
  * 'POPULATE' THE NAMESPACE - establish 3rd level members and define additional methods and properties
  *****/
 /**
-* RCM$.CoreOne.Deployment - developers only; helps enforce our proprietary dev flow
-* RCM$.CoreOne.Deployment = Red Crow Methods Name Space > Add-on Template > Deployment
+* RCM$.ThisAddon.Deployment - developers only; helps enforce our dev flow
+* RCM$.ThisAddon.Deployment = Red Crow Methods Name Space > Add-on Template > Deployment
 */
 (function (nested) {
  nested.description = "Red Crow Methods Name Space > Development Flow > Deployment; developers only; helps enforce our proprietary dev flow";
@@ -19,7 +20,7 @@ RCM$.CoreOne = RCM$.CoreOne || {};//2nd level member regardless of file load ord
    PropertiesService.getScriptProperties().setProperty('GoNoGo Status', 'N');
    //GO LIST IF NOT ALREADY
    Logger.log("Checking if already goListed...");
-   var retrievedGoListRcdObj = RCM$.CoreOne.GoListSvc.isGoListed(RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION, ScriptApp.getScriptId());
+   var retrievedGoListRcdObj = RCM$.ThisAddon.GoListSvc.isGoListed(RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION, ScriptApp.getScriptId());
    if (!retrievedGoListRcdObj){
      Logger.log("Not listed. Creating new goListRcd...");
      var localGoListRcdObj = new GoListSvcRcdDef();
@@ -30,7 +31,7 @@ RCM$.CoreOne = RCM$.CoreOne || {};//2nd level member regardless of file load ord
 
      //Use new object to prime the properties so up to date if used later as they are in webhooks for slack
      Logger.log("Priming script properties...")
-     RCM$.CoreOne.GoListSvc.setScriptProperties(localGoListRcdObj,true);
+     RCM$.ThisAddon.GoListSvc.setScriptProperties(localGoListRcdObj,true);
      PropertiesService.getScriptProperties().setProperty("GoNoGo Status", 'Y');
 
      //use new object to create a matching target sheet for testing ONLY if not a production READY go list
@@ -65,7 +66,7 @@ RCM$.CoreOne = RCM$.CoreOne || {};//2nd level member regardless of file load ord
    }//end enclosed writeGoListRcd
  };
  return nested;
-})(RCM$.CoreOne.Deployment = RCM$.CoreOne.Deployment || {});
+})(RCM$.ThisAddon.Deployment = RCM$.ThisAddon.Deployment || {});
 //END NAMESPACE
 
 /****
@@ -84,7 +85,7 @@ function makeScriptTestReady() {//formally goListTheCurrentScript
   var objRunStats = startAnalytics(); //START ANALYTICS
   objRunStats.incrementSuccessBoolean();
 
-  var exitMemo = RCM$.CoreOne.Deployment.goListTheCurrentScript(objRunStats);
+  var exitMemo = RCM$.ThisAddon.Deployment.goListTheCurrentScript(objRunStats);
 
   //CLOSE SUCCESSFUL OR NOT
   if (objRunStats.exceptionCount === 0) {
