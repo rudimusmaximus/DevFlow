@@ -25,7 +25,7 @@ function onInstall(e) {
  * project file.
  */
 function showSidebar() {
-  var ui = HtmlService.createTemplateFromFile(RCM$.ThisAddon.Enums.HTML_SIDEBAR)
+  var ui = HtmlService.createTemplateFromFile(RCM$.ThisAddon.Enums.HTML_SIDEBAR_FILE)
       .evaluate()
       .setTitle(RCM$.ThisAddon.Enums.SIDEBAR_TITLE)
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);
