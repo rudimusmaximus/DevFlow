@@ -6,7 +6,7 @@
 function onOpen(e) {
   SpreadsheetApp.getUi()
       .createAddonMenu()
-      .addItem('Start workflow', 'showSidebar')
+      .addItem('Start workflow', 'showWelcomeSidebar')
       .addToUi();
 }
 
@@ -24,10 +24,11 @@ function onInstall(e) {
  * Opens a sidebar. The sidebar structure is described in the Sidebar.html
  * project file.
  */
-function showSidebar() {
+function showWelcomeSidebar() {
   var ui = HtmlService.createTemplateFromFile(RCM$.ThisAddon.Enums.HTML_SIDEBAR_FILE)
       .evaluate()
       .setTitle(RCM$.ThisAddon.Enums.SIDEBAR_TITLE)
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);
   SpreadsheetApp.getUi().showSidebar(ui);
+  //TODO run menu so lists restart and other available demo functions
 }
