@@ -1,9 +1,3 @@
-// //extend or establish namespace object if in another file
-// var RCM$       = RCM$           || {};//top level regardless of file load order
-// RCM$.LibCc     = RCM$.LibCc     || {};//2nd level member regardless of file load order
-// RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load order
-
-
 /**
  * Adds a custom menu with items to show the sidebar and dialog.
  *
@@ -31,7 +25,7 @@ function onInstall(e) {
  * project file.
  */
 function showSidebar() {
-  var ui = HtmlService.createTemplateFromFile('RCM$.ThisAddon.Enums.HTML_SIDEBAR')
+  var ui = HtmlService.createTemplateFromFile(RCM$.ThisAddon.Enums.HTML_SIDEBAR)
       .evaluate()
       .setTitle(RCM$.ThisAddon.Enums.SIDEBAR_TITLE)
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);
