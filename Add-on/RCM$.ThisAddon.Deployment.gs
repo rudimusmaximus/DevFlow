@@ -74,7 +74,7 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
    * Toast message placeholder for future demos
    */
   nested.wipToast = function(durationSeconds) {
-    SpreadsheetApp.getActive().toast("Nothing to do!", "Future goodness; tacking volunteers.", durationSeconds);
+    SpreadsheetApp.getActive().toast("Volunteer today.","Nothing to do!", durationSeconds);
     return true;
   };
   return nested;
