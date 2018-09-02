@@ -1,6 +1,6 @@
 //extend or establish namespace object if in another file
-var RCM$ = RCM$ || {}; //top level regardless of file load order
-RCM$.LibCc = RCM$.LibCc || {}; //2nd level member regardless of file load order
+var RCM$       = RCM$           || {}; //top level regardless of file load order
+RCM$.LibCc     = RCM$.LibCc     || {}; //2nd level member regardless of file load order
 RCM$.ThisAddon = RCM$.ThisAddon || {}; //2nd level member regardless of file load order;
 /****
  * 'POPULATE' THE NAMESPACE - establish 3rd level members and define additional methods and properties
