@@ -4,10 +4,7 @@
  * @param {Object} e The event parameter for a simple onOpen trigger.
  */
 function onOpen(e) {
-  SpreadsheetApp.getUi()
-      .createAddonMenu()
-      .addItem('Start workflow', 'showWelcomeSidebar')
-      .addToUi();
+  RCM$.ThisAddon.SupportFunctions.addMenu("onOpen");
 }
 
 /**
@@ -24,11 +21,16 @@ function onInstall(e) {
  * Opens a sidebar. The sidebar structure is described in the Sidebar.html
  * project file.
  */
-function showWelcomeSidebar() {
-  var ui = HtmlService.createTemplateFromFile(RCM$.ThisAddon.Enums.HTML_SIDEBAR_FILE)
-      .evaluate()
-      .setTitle(RCM$.ThisAddon.Enums.SIDEBAR_TITLE)
-      .setSandboxMode(HtmlService.SandboxMode.IFRAME);
-  SpreadsheetApp.getUi().showSidebar(ui);
-  //TODO run menu so lists restart and other available demo functions
+function startWorkflow() {
+  RCM$.ThisAddon.SupportFunctions.showWelcomeSidebar();
+  RCM$.ThisAddon.SupportFunctions.addMenu('startWorkflow');
+}
+
+/**
+ * Opens a sidebar. The sidebar structure is described in the Sidebar.html
+ * project file. Note: same as start but setup to allow differences if required
+ */
+function restartWorkflow() {
+  RCM$.ThisAddon.SupportFunctions.showWelcomeSidebar();
+  RCM$.ThisAddon.SupportFunctions.addMenu('restartWorkflow');
 }
