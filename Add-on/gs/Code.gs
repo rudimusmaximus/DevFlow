@@ -9,7 +9,7 @@ function onOpen(e) {
 
 /**
  * Runs when the add-on is installed; calls onOpen() to ensure menu creation and
- * any other initializion work is done immediately.
+ * any other initialization work is done immediately.
  *
  * @param {Object} e The event parameter for a simple onInstall trigger.
  */
