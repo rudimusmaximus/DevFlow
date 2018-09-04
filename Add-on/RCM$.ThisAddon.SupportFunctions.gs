@@ -45,16 +45,24 @@ RCM$.ThisAddon = RCM$.ThisAddon || {}; //2nd level member regardless of file loa
         SpreadsheetApp.getUi().createAddonMenu()
           .addItem('Restart workflow', 'restartWorkflow')
           .addSeparator()
-          .addItem('Placeholder start demo x', 'no')
-          .addItem('Placeholder start demo y', 'no')
+          .addItem('Demo example sidebar', 'tellUserNotReady')
+          .addItem('Demo update multiple cells', 'tellUserNotReady')
+          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
+          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
+          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
+          .addItem('Demo what\'s new?', 'tellUserNotReady')
           .addToUi();
         break;
       default:
         SpreadsheetApp.getUi().createAddonMenu()
-          .addItem('Restart workflow', 'restartWorkflow')
+        .addItem('Restart workflow', 'restartWorkflow')
           .addSeparator()
-          .addItem('Placeholder start demo x', 'no')
-          .addItem('Placeholder start demo y', 'no')
+          .addItem('Demo example sidebar', 'tellUserNotReady')
+          .addItem('Demo update multiple cells', 'tellUserNotReady')
+          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
+          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
+          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
+          .addItem('Demo what\'s new?', 'tellUserNotReady')
           .addToUi();
         break;
     } //end switch

@@ -66,7 +66,7 @@ Narrows down the user story for reproducing, trouble shooting, designing.
 <img width="216" alt="Application Step" src="https://user-images.githubusercontent.com/21182598/28240577-5444a0f2-694a-11e7-9c71-1db71425c4c2.png">
 ## Tips  
 - [x] During the evolution of the issues, any XLs should be broken into smaller issues before becoming part of any sprint.
-- [x] You can copy labels between repos. See [this tool.](www.dorukdestan.com/github-label-manager/)  
+- [x] You can copy labels between repos. See [GitHub Label Manager](https://www.dorukdestan.com/github-label-manager/) 
 
 # Proposing Code Changes  
 Create issues with the label scheme above for any desired change. The issue template will give you a default layout. Start even with just the issue title only and when you want feedback on the item at whatever level of detail you are at, then move it into discussion.
