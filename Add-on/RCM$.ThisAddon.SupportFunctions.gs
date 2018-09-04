@@ -54,6 +54,7 @@ RCM$.ThisAddon = RCM$.ThisAddon || {}; //2nd level member regardless of file loa
           .addToUi();
         break;
       default:
+        SpreadsheetApp.getUi().createAddonMenu()
         .addItem('Restart workflow', 'restartWorkflow')
           .addSeparator()
           .addItem('Demo example sidebar', 'tellUserNotReady')
