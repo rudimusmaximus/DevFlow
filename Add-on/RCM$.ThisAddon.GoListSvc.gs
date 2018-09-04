@@ -19,7 +19,7 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
  * RCM$.ThisAddon.goListSvc = Red Crow Methods Name Space > Add-on Template > Go List Service
  */
 (function (nested) {
-  nested.description = "Add-on Template > go list service; RCM$.ThisAddon.GoListSvc - part of the Red Crow Dev Flow"
+  nested.description = "Add-on Template > go list service; RCM$.ThisAddon.GoListSvc - part of the Red Crow Dev Flow";
   return nested;
 })(RCM$.ThisAddon.GoListSvc = RCM$.ThisAddon.GoListSvc || {});
 
