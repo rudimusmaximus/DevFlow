@@ -47,8 +47,8 @@ function tellUserNotReady() {
  * Toast message placeholder for future demos
  */
 function wipToast(durationSeconds) {
-  
-  SpreadsheetApp.getActive().toast("Volunteer today.","Nothing to do!", durationSeconds);
+
+  SpreadsheetApp.getActive().toast("Not yet.","Volunteer today!", durationSeconds);
 
   return true;
 }
