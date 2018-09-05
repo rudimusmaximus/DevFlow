@@ -11,29 +11,31 @@
  * @return {string} responseString - the value associated with the requested field name.
  */
 function getLiteral(requestedField) {
-  var response = "";
-  switch (requestedField) {
-    case "currentStatedDomainCode":
-        //STATED DOMAINS are unique to the domain the script is deployed from (assumed same id when published via developer dashboard)
-        // if not set at deployment, undregistered scripts will be treated as a disposable alhpa, meaning the script is a test copy and not a script file that gets pushed to a production domain (ie published to the store)
-        var scriptId = ScriptApp.getScriptId();
-        if (scriptId === RCM$.ThisAddon.Enums.RCC_REGISTERED_SCRIPT_ID) {
-            response = RCM$.ThisAddon.Enums.REDCROWCONSULTING_STATED_DOMAIN_CODE;
+    var response = "";
+    switch (requestedField) {
+        case "currentStatedDomainCode":
+            //STATED DOMAINS are unique to the domain the script is deployed from (assumed same id when published via developer dashboard)
+            // if not set at deployment, undregistered scripts will be treated as a disposable alhpa, meaning the script is a test copy and not a script file that gets pushed to a production domain (ie published to the store)
+            var scriptId = ScriptApp.getScriptId();
+            if (scriptId === RCM$.ThisAddon.Enums.RCC_REGISTERED_SCRIPT_ID_MKT ||
+                RCM$.ThisAddon.Enums.RCC_REGISTERED_SCRIPT_ID_LNK ||
+                RCM$.ThisAddon.Enums.RCC_REGISTERED_SCRIPT_ID_GRP) {
+                response = RCM$.ThisAddon.Enums.REDCROWCONSULTING_STATED_DOMAIN_CODE;
+                break;
+            } else if (scriptId === RCM$.ThisAddon.Enums.RCM_REGISTERED_SCRIPT_ID_MKT ||
+                RCM$.ThisAddon.Enums.RCM_REGISTERED_SCRIPT_ID_LNK ||
+                RCM$.ThisAddon.Enums.RCM_REGISTERED_SCRIPT_ID_GRP) {
+                response = RCM$.ThisAddon.Enums.REDCROWMETHODS_STATED_DOMAIN_CODE;
+                break;
+            };
+            response = RCM$.ThisAddon.Enums.DISPOSABLE_ALPHA_STATED_DOMAIN_CODE; //is unrecognized and likely a "disposable alpha script which could be in any domain and if so the user email will be a developer and give it away; note: this value is checked in go listing so change with care
             break;
-        } else if (scriptId === RCM$.ThisAddon.Enums.RCM_REGISTERED_SCRIPT_ID) {
-            response = RCM$.ThisAddon.Enums.REDCROWMETHODS_STATED_DOMAIN_CODE;
+        default:
+            response = "Requested field not defined among literals.";
             break;
-        };
-        response = RCM$.ThisAddon.Enums.DISPOSABLE_ALPHA_STATED_DOMAIN_CODE; //is unrecognized and likely a "disposable alpha script which could be in any domain and if so the user email will be a developer and give it away; note: this value is checked in go listing so change with care
-        break;
-    default:
-        response = "Requested field not defined among literals.";
-        break;
-  } //end switch
-  return response;
+    } //end switch
+    return response;
 } //end getLiteral
-
-
 /**
  * Returns the requested hardcoded literal as a string based on statedDomainCode.
  *
