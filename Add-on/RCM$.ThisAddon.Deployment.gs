@@ -67,17 +67,4 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
  };
  return nested;
 })(RCM$.ThisAddon.Deployment = RCM$.ThisAddon.Deployment || {});
-
-//RCM$.ThisAddon.Deployment.wipToast();
-(function(nested) {
-  /**
-   * Toast message placeholder for future demos
-   */
-  nested.wipToast = function(durationSeconds) {
-    SpreadsheetApp.getActive().toast("Volunteer today.","Nothing to do!", durationSeconds);
-    return true;
-  };
-  return nested;
-})(RCM$.ThisAddon.Deployment);
-
 //END NAMESPACE

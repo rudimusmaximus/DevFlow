@@ -14,64 +14,6 @@ RCM$.ThisAddon = RCM$.ThisAddon || {}; //2nd level member regardless of file loa
   return nested;
 })(RCM$.ThisAddon.SupportFunctions = RCM$.ThisAddon.SupportFunctions || {});
 
-//RCM$.ThisAddon.SupportFunctions.addMenu
-(function(nested) {
-  /**
-   * Builds the add-on menu
-   * callingFromCase string context name for calling context
-   * returns boolean true if successful
-   */
-  nested.addMenu = function(callingFromCase) {
-    switch (callingFromCase) { //KICK off matching
-      case "onOpen":
-        SpreadsheetApp.getUi()
-          .createAddonMenu()
-          .addItem('Start workflow', 'startWorkflow')
-          .addToUi();
-        break;
-      case "startWorkflow":
-        SpreadsheetApp.getUi().createAddonMenu()
-          .addItem('Restart workflow', 'restartWorkflow')
-          .addSeparator()
-          .addItem('Demo example sidebar', 'tellUserNotReady')
-          .addItem('Demo update multiple cells', 'tellUserNotReady')
-          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
-          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
-          .addItem('Demo what\'s new?', 'tellUserNotReady')
-          .addToUi();
-        break;
-      case "restartWorkflow": //same as start but setup to allow differences if required
-        SpreadsheetApp.getUi().createAddonMenu()
-          .addItem('Restart workflow', 'restartWorkflow')
-          .addSeparator()
-          .addItem('Demo example sidebar', 'tellUserNotReady')
-          .addItem('Demo update multiple cells', 'tellUserNotReady')
-          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
-          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
-          .addItem('Demo what\'s new?', 'tellUserNotReady')
-          .addToUi();
-        break;
-      default:
-        SpreadsheetApp.getUi().createAddonMenu()
-        .addItem('Restart workflow', 'restartWorkflow')
-          .addSeparator()
-          .addItem('Demo example sidebar', 'tellUserNotReady')
-          .addItem('Demo update multiple cells', 'tellUserNotReady')
-          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
-          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
-          .addItem('Demo what\'s new?', 'tellUserNotReady')
-          .addToUi();
-        break;
-    } //end switch
-
-    return true;
-  };
-  return nested;
-})(RCM$.ThisAddon.SupportFunctions);
-
 //RCM$.ThisAddon.SupportFunctions.showWelcomeSidebar();
 (function(nested) {
   /**
