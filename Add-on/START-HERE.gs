@@ -22,7 +22,7 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
   nested.Enums = {
     USER_FACING_NAME_OF_ADDON:            "DevFlow", //RCM$.Enums.USER_FACING_NAME_OF_ADDON
     //************************************************** SEMANTIC VERSIONING
-    CURRENT_ADDON_VERSION:                "0.5.4-registeredScripts.1",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in Make Test Ready (GO LISTING) AND DEV FLOW **** START HERE TO SET SEM VER
+    CURRENT_ADDON_VERSION:                "0.5.4-registeredScripts.3",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in Make Test Ready (GO LISTING) AND DEV FLOW **** START HERE TO SET SEM VER
     /****************************** EXTERNAL REFERENCE SHEETS USED IN ADD-ON'S ECOSYSTEM
      * e3.Analytics             = Analytics for this add-on //simplified for DevFlow use
      * e4.GoListSvc             =  goListed activity *** used in GO LISTING AND DEV FLOW ****
