@@ -20,25 +20,31 @@ RCM$.ThisAddon = RCM$.ThisAddon || {};//2nd level member regardless of file load
  */
 (function (nested) {
   nested.Enums = {
-    USER_FACING_NAME_OF_ADDON       : "DevFlow", //RCM$.Enums.USER_FACING_NAME_OF_ADDON
+    USER_FACING_NAME_OF_ADDON:            "DevFlow", //RCM$.Enums.USER_FACING_NAME_OF_ADDON
     //************************************************** SEMANTIC VERSIONING
-    CURRENT_ADDON_VERSION           : "0.5.4",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in Make Test Ready (GO LISTING) AND DEV FLOW **** START HERE TO SET SEM VER
+    CURRENT_ADDON_VERSION:                "0.5.5",  //RCM$.ThisAddon.Enums.CURRENT_ADDON_VERSION *** used in Make Test Ready (GO LISTING) AND DEV FLOW **** START HERE TO SET SEM VER
     /****************************** EXTERNAL REFERENCE SHEETS USED IN ADD-ON'S ECOSYSTEM
      * e3.Analytics             = Analytics for this add-on //simplified for DevFlow use
      * e4.GoListSvc             =  goListed activity *** used in GO LISTING AND DEV FLOW ****
      */
-    ANALYTICS_SHEET_ID              : "1Zun1eviMoPS2HPUIUE1PhyHFFeTw2iXA9vM3pH2_INY",//Setup New until we can replace or complement with stackdriver approach,
-    GO_LIST_SERVICE_SHEET_ID        : "1bhb2uJOF4JPXqMWqMMWHvO9NT4nmprX4-DazOG75xa4",//Setup New,
+    ANALYTICS_SHEET_ID:                   "1Zun1eviMoPS2HPUIUE1PhyHFFeTw2iXA9vM3pH2_INY",//Setup New until we can replace or complement with stackdriver approach,
+    GO_LIST_SERVICE_SHEET_ID:             "1bhb2uJOF4JPXqMWqMMWHvO9NT4nmprX4-DazOG75xa4",//Setup New,
     //************************************************** ONE CODE BASE MUST ACCOUNT FOR DEPLOYMENTS INTO ONE OR MORE DOMAINS AND TEST COPIES (ALPHA) IN ANY DOMAIN
-    RCC_REGISTERED_SCRIPT_ID : '1EdAROkZV8jZmDrzAtfbjDWFinWPOlMT3JPVgcn-_RxXXcg87wJVIoBoi',
-    RCM_REGISTERED_SCRIPT_ID : '11Gzf_FjgohKQddB4Fk3cSTAfhUGfjdWof2WoolG-pS8-1uvRhIFiR9_K',
-    REDCROWCONSULTING_STATED_DOMAIN_CODE : "@RCC",
-    REDCROWMETHODS_STATED_DOMAIN_CODE    : "@RCM",
-    DISPOSABLE_ALPHA_STATED_DOMAIN_CODE  : "DA!", //is unrecognized and likely a "disposable alpha script which could be in any domain and if so the user email will be a developer and give it away; note: this value is checked in go listing so change with care
-    HTML_SIDEBAR_FILE : "Add-on/html/Sidebar.html",
-    SIDEBAR_TITLE : 'Welcome',
+    RCC_REGISTERED_SCRIPT_ID_MKT:     '1EdAROkZV8jZmDrzAtfbjDWFinWPOlMT3JPVgcn-_RxXXcg87wJVIoBoi',
+    RCC_REGISTERED_SCRIPT_ID_LNK:     'tbd',
+    RCC_REGISTERED_SCRIPT_ID_GRP:     'tbd',
+    RCM_REGISTERED_SCRIPT_ID_MKT:     '11Gzf_FjgohKQddB4Fk3cSTAfhUGfjdWof2WoolG-pS8-1uvRhIFiR9_K',
+    RCM_REGISTERED_SCRIPT_ID_LNK:     '1h5JNPZUx9qn1fwTIdgAvCWjWqm2LkPHqkvYxDgT7aKpHE697VbWnXHM-',
+    RCM_REGISTERED_SCRIPT_ID_GRP:     'tbd',
 
-    HTML_NEW_VERSION_DIALOG      : "reserved for path when this functionality is available"
+
+    REDCROWCONSULTING_STATED_DOMAIN_CODE: "@RCC",
+    REDCROWMETHODS_STATED_DOMAIN_CODE:    "@RCM",
+    DISPOSABLE_ALPHA_STATED_DOMAIN_CODE:  "DA!", //is unrecognized and likely a "disposable alpha script which could be in any domain and if so the user email will be a developer and give it away; note: this value is checked in go listing so change with care
+    HTML_SIDEBAR_FILE:                    "Add-on/html/Sidebar.html",
+    SIDEBAR_TITLE:                        'Welcome',
+
+    HTML_NEW_VERSION_DIALOG:              "reserved for path when this functionality is available"
   };
   return nested;
 })(RCM$.ThisAddon = RCM$.ThisAddon || {}); //creates level 2 branch
