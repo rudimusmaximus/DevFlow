@@ -1,3 +1,9 @@
+# to ignore local clasp file
+.clasp.json
+
+# to keep our linting and atom editor config local
+.editorconfig
+.eslintrc.json
 
 # Created by https://www.gitignore.io/api/linux,macos,windows
 
