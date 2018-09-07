@@ -73,7 +73,7 @@ function addMenu(callingFromCase) {
           .addItem('Demo example sidebar', 'startSidebarExample')
           .addItem('Demo update multiple cells', 'tellUserNotReady')
           .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
+          .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
           .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
           .addItem('Demo what\'s new?', 'tellUserNotReady')
           .addToUi();
@@ -85,7 +85,7 @@ function addMenu(callingFromCase) {
           .addItem('Demo example sidebar', 'startSidebarExample')
           .addItem('Demo update multiple cells', 'tellUserNotReady')
           .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
+          .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
           .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
           .addItem('Demo what\'s new?', 'tellUserNotReady')
           .addToUi();
@@ -97,7 +97,7 @@ function addMenu(callingFromCase) {
           .addItem('Demo example sidebar', 'startSidebarExample')
           .addItem('Demo update multiple cells', 'tellUserNotReady')
           .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'tellUserNotReady')
+          .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
           .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
           .addItem('Demo what\'s new?', 'tellUserNotReady')
           .addToUi();
