@@ -18,7 +18,7 @@ function showGoogleSidebarExampleSidebar() {//this will link to our run button
  * project file.
  */
 function showGoogleSidebarExampleDialog() {//this will be in the menu when we start the sidebar demo
-  var ui = HtmlService.createTemplateFromFile('Demos/GoogleSidebarExample/html/Dialog.html')
+  var ui = HtmlService.createTemplateFromFile('Demos/GoogleSidebarExample/html/Dialog')
       .evaluate()
       .setWidth(400)
       .setHeight(190)
