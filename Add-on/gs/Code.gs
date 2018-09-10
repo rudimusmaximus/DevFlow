@@ -71,6 +71,7 @@ function addMenu(callingFromCase) {
           .addItem('Restart workflow', 'restartWorkflow')
           .addSeparator()
           .addItem('Demo example sidebar', 'startSidebarExample')
+          .addItem('TempTEST', 'showGoogleSidebarExampleSidebar')//TODO: remove
           .addItem('Demo update multiple cells', 'tellUserNotReady')
           .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
           .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
@@ -83,6 +84,7 @@ function addMenu(callingFromCase) {
           .addItem('Restart workflow', 'restartWorkflow')
           .addSeparator()
           .addItem('Demo example sidebar', 'startSidebarExample')
+          .addItem('TempTEST', 'showGoogleSidebarExampleSidebar')//TODO: remove
           .addItem('Demo update multiple cells', 'tellUserNotReady')
           .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
           .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
@@ -90,6 +92,13 @@ function addMenu(callingFromCase) {
           .addItem('Demo what\'s new?', 'tellUserNotReady')
           .addToUi();
         break;
+        case "startSidebarExample": //same as start but setup to allow differences if required
+          SpreadsheetApp.getUi().createAddonMenu()
+            .addItem('Restart workflow', 'restartWorkflow')
+            .addSeparator()
+            .addItem('Show current demo\'s example dialog', 'showGoogleSidebarExampleDialog')
+            .addToUi();
+          break;
       default:
         SpreadsheetApp.getUi().createAddonMenu()
         .addItem('Restart workflow', 'restartWorkflow')
