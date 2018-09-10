@@ -4,20 +4,30 @@
 <head>
   <base target="_top">
   <!-- Use a templated HTML printing scriptlet to import common stylesheet -->
-  <?!= HtmlService.createHtmlOutputFromFile('Add-on/html/Sidebar.css').getContent(); ?>
+  <?!= HtmlService.createHtmlOutputFromFile('welcome/html/Sidebar.css').getContent(); ?>
 </head>
 
 <body>
   <!-- Below is the HTML code that defines the sidebar element structure. -->
   <div class="sidebar branding-below">
     <div class="addon-sidebar-banner">
-      <img class="addon-sidebar-banner-image" src="https://user-images.githubusercontent.com/4926027/45123630-8b1b3800-b135-11e8-94c0-7d11d7bac877.jpeg" alt="DevFlow Demos">
+      <img class="addon-sidebar-banner-image" src="https://avatars2.githubusercontent.com/u/4926027?s=460&v=4"
+      alt="Picture of Rob Goelz">
     </div>
-    <p> Demo Sidebar Example - Welcome to the Side Bar </p>
+  <p class="addon-sidebar-content">
+    <strong>DevFlow Contributor: </strong><a href="https://www.linkedin.com/in/robgoelz/">Rob Goelz</a><br><br>
+    <strong>Sources: </strong>
 
-    <button class="create">Test Button Does Nothing!</button>
+    <strong>What this demo does:</strong><br>
+    Shows you how launch a sidebar.<br><br>
+    <strong>Advanced Services Enabled:</strong><br>
+    Drive API<br><br>
+    <strong>Instructions:</strong><br>
+    Click <strong>Run</strong> to "open a new Sidebar", click <strong>Close Me!</strong> to close the demo'<br><br>
+</p>
+   <button class="action">Run</button>
+   <button>Close Me</button>
   </div>
-
   <!-- Enter sidebar bottom-branding below. -->
   <div class="sidebar bottom">
     <img alt="Add-on logo" class="logo" width="25" src="https://user-images.githubusercontent.com/21182598/44923511-1350a600-ad0e-11e8-9f05-41700cb8aafa.png">
