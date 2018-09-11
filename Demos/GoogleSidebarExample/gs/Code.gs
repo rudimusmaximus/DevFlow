@@ -11,13 +11,14 @@ function showGoogleSidebarExampleSidebar() {//this will link to our run button
       .setTitle(GOOGLE_SIDEBAR_EXAMPLE_SIDEBAR_TITLE)
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);
   SpreadsheetApp.getUi().showSidebar(ui);
+  addMenu('sidebarExampleRunClick');
 }
 
 /**
  * Opens a dialog. The dialog structure is described in the Dialog.html
  * project file.
  */
-function showGoogleSidebarExampleDialog() {//this will be in the menu when we start the sidebar demo
+function showGoogleSidebarExampleDialog() {
   var ui = HtmlService.createTemplateFromFile('Demos/GoogleSidebarExample/html/Dialog')
       .evaluate()
       .setWidth(400)
