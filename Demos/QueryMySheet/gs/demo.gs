@@ -11,3 +11,19 @@ function showQueryMySheetDemoWelcome() {
 
   return true;
 }
+
+/**
+ *
+ * TODO: BurningGAS! additions
+ */
+ function queryMySheetSetup(){
+   return "setup placeholder";
+ }
+
+ /**
+  *
+  * TODO: BurningGAS! additions
+  */
+  function queryMySheetRun(){
+    return "run placeholder";
+  }
