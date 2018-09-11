@@ -54,55 +54,69 @@ function wipToast(durationSeconds) {
 }
 
 /**
- * Builds the add-on menu
- * callingFromCase string context name for calling context
- * returns boolean true if successful
- */
+* Builds the add-on menu
+* callingFromCase string context name for calling context
+* returns boolean true if successful
+*/
 function addMenu(callingFromCase) {
-    switch (callingFromCase) { //KICK off matching
-      case "onOpen":
-        SpreadsheetApp.getUi()
-          .createAddonMenu()
-          .addItem('Start workflow', 'startWorkflow')
-          .addToUi();
-        break;
-      case "startWorkflow":
-        SpreadsheetApp.getUi().createAddonMenu()
-          .addItem('Restart workflow', 'restartWorkflow')
-          .addSeparator()
-          .addItem('Demo example sidebar', 'startSidebarExample')
-          .addItem('Demo update multiple cells', 'tellUserNotReady')
-          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
-          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
-          .addItem('Demo what\'s new?', 'tellUserNotReady')
-          .addToUi();
-        break;
-      case "restartWorkflow": //same as start but setup to allow differences if required
-        SpreadsheetApp.getUi().createAddonMenu()
-          .addItem('Restart workflow', 'restartWorkflow')
-          .addSeparator()
-          .addItem('Demo example sidebar', 'startSidebarExample')
-          .addItem('Demo update multiple cells', 'tellUserNotReady')
-          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
-          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
-          .addItem('Demo what\'s new?', 'tellUserNotReady')
-          .addToUi();
-        break;
-      default:
-        SpreadsheetApp.getUi().createAddonMenu()
-        .addItem('Restart workflow', 'restartWorkflow')
-          .addSeparator()
-          .addItem('Demo example sidebar', 'startSidebarExample')
-          .addItem('Demo update multiple cells', 'tellUserNotReady')
-          .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
-          .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
-          .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
-          .addItem('Demo what\'s new?', 'tellUserNotReady')
-          .addToUi();
-        break;
-    } //end switch
+  switch (callingFromCase) { //KICK off matching
+    case "onOpen":
+      SpreadsheetApp.getUi()
+      .createAddonMenu()
+      .addItem('Start workflow', 'startWorkflow')
+      .addToUi();
+      break;
+    case "startWorkflow":
+      SpreadsheetApp.getUi().createAddonMenu()
+      .addItem('Restart workflow', 'restartWorkflow')
+      .addSeparator()
+      .addItem('Demo example sidebar', 'startSidebarExample')
+      .addItem('Demo update multiple cells', 'tellUserNotReady')
+      .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
+      .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
+      .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
+      .addItem('Demo what\'s new?', 'tellUserNotReady')
+      .addToUi();
+      break;
+    case "restartWorkflow": //same as start but setup to allow differences if required
+      SpreadsheetApp.getUi().createAddonMenu()
+      .addItem('Restart workflow', 'restartWorkflow')
+      .addSeparator()
+      .addItem('Demo example sidebar', 'startSidebarExample')
+      .addItem('Demo update multiple cells', 'tellUserNotReady')
+      .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
+      .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
+      .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
+      .addItem('Demo what\'s new?', 'tellUserNotReady')
+      .addToUi();
+      break;
+    case "startSidebarExample": //This demo's menu is loaded when a new sidebar starts on run click
+      SpreadsheetApp.getUi().createAddonMenu()
+      .addItem('Restart workflow', 'restartWorkflow')
+      .addSeparator()
+      .addItem('Show current demo\'s example dialog', 'showGoogleSidebarExampleDialog')
+      .addToUi();
+      break;
+    case "sidebarExampleRunClick": //This is the Demo's menu started from run click on demo's welcome sidebar
+      SpreadsheetApp.getUi().createAddonMenu()
+      .addItem('Restart workflow', 'restartWorkflow')
+      .addSeparator()
+      .addItem('Show current demo\'s example dialog', 'showGoogleSidebarExampleDialog')
+      .addToUi();
+      break;
+    default:
+      SpreadsheetApp.getUi().createAddonMenu()
+      .addItem('Restart workflow', 'restartWorkflow')
+      .addSeparator()
+      .addItem('Demo example sidebar', 'startSidebarExample')
+      .addItem('Demo update multiple cells', 'tellUserNotReady')
+      .addItem('Demo manipulate disjoint ranges', 'tellUserNotReady')
+      .addItem('Demo query a sheet into memory', 'showQueryMySheetDemoWelcome')
+      .addItem('Demo JavaScript patterns (several tbd)', 'tellUserNotReady')
+      .addItem('Demo what\'s new?', 'tellUserNotReady')
+      .addToUi();
+      break;
+  } //end switch
 
     return true;
 } //end function addMenu

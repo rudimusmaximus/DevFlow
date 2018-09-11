@@ -13,6 +13,6 @@ function startSidebarExample() {
         .setTitle('Demo Sidebar Example')
         .setSandboxMode(HtmlService.SandboxMode.IFRAME);
     SpreadsheetApp.getUi().showSidebar(ui);
-
+    addMenu('startSidebarExample');
     return true;
 }
