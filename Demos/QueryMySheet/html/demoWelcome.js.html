@@ -7,15 +7,15 @@
     // Assign handler functions to sidebar elements here, if needed.
     $('#sidebar-run-button').click(onRunClick);
     $('#sidebar-setup-button').click(onSetupClick);
+    $('#sidebar-clean-button').click(onCleanClick);
 
     // Call the server here to retrieve any information needed to build
     // the dialog, if necessary.
   });
 
   /**
-   * Calls the server to retrieve information from the sheet.
-   * Gets the value in the active cell, which is then placed in the
-   * sidebar text field.
+   * Calls the server to setup an welcome and input sheets
+   * all other sheets are removed. Receives message and posts to sidebar
    */
   function onSetupClick() {
     this.disabled = true;
@@ -27,7 +27,7 @@
         .withSuccessHandler(
           function(msg, element) {
             // Respond to success conditions here
-            showStatus('Setup click successful.');
+            showStatus(msg);
             element.disabled = false;
           })
         .withFailureHandler(
@@ -41,9 +41,8 @@
   }
 
   /**
-   * Calls the server to retrieve information from the sheet.
-   * Gets the value in the active cell, which is then placed in the
-   * sidebar text field.
+   * Calls the server to run the query and place results in right-sized
+   * new sheet
    */
   function onRunClick() {
     this.disabled = true;
@@ -55,7 +54,7 @@
         .withSuccessHandler(
           function(msg, element) {
             // Respond to success conditions here
-            showStatus('Run click successful.');
+            showStatus(msg);
             element.disabled = false;
           })
         .withFailureHandler(
@@ -67,6 +66,34 @@
         .withUserObject(this)
         .queryMySheetRun();
   }
+
+    /**
+     * Calls the server to retrieve information from the sheet.
+     * Gets the value in the active cell, which is then placed in the
+     * sidebar text field.
+     */
+    function onCleanClick() {
+      this.disabled = true;
+
+      // Gather any information that needs to be sent to the server here.
+
+      // Send the value to the server and handle the response.
+      google.script.run
+          .withSuccessHandler(
+            function(msg, element) {
+              // Respond to success conditions here
+              showStatus(msg);
+              element.disabled = false;
+            })
+          .withFailureHandler(
+            function(msg, element) {
+              // Respond to failure conditions here
+              showStatus(msg, 'error');
+              element.disabled = false;
+            })
+          .withUserObject(this)
+          .queryMySheetClean();
+    }
 
   /**
    * Displays the given status message in the sidebar.
